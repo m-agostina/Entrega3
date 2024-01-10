@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Producto 1",
+    "description": "Descripción producto 1",
+    "price": 1999,
+    "thumbnail": "ruta1.jpg",
+    "code": "P001",
+    "stock": 11,
+    "id": 1
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción producto 2",
+    "price": 2999,
+    "thumbnail": "ruta2.jpg",
+    "code": "P002",
+    "stock": 15,
+    "id": 2
+  },
+  {
+    "title": "Producto 3",
+    "description": "Descripción producto 3",
+    "price": 3999,
+    "thumbnail": "ruta3.jpg",
+    "code": "P003",
+    "stock": 21,
+    "id": 3
+  }
+]
