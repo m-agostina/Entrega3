@@ -11,10 +11,17 @@ app.listen(PORT, () =>{
 
 //endpoints
 app.get('/products', async (req, res) => {
-    try {
+    try{
+        const limit =req.query.limit
         const response = await products.getProducts()
-        res.send(JSON.stringify(response, null, 2))
-    } catch (error) {
+        //validar que sea un limite valido
+        if(limit && !isNaN(limit)){
+            const limitedRes= response.slice(0, parseInt(limit))
+            res.type('json').send(JSON.stringify(limitedRes, null, 2))
+        } else {
+            res.type('json').send(JSON.stringify(response, null, 2))
+        }
+    }catch(error) {
         console.error(error)
     }
 })
